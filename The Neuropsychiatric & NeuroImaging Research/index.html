@@ -93,7 +93,224 @@ body {font-family: Arial;}
 
 <div id="Neuropsychiatry" class="tabcontent">
   <h3>Neuropsychiatry</h3>
+  <p> Neuropsychiatry is a subfield of psychiatry<!DOCTYPE html>
+<html class="html" lang="en-US">
+
+<header>
+<title> Computational & Educational Neuroscience </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</header>
+
+<body style = background-color:lightblue;>
+
+
+<div style = padding-left:240px;>
+
+<h1> The Neuropsychiatric & NeuroImaging Research <h1>
+
+</div>
+
+
+<div style = padding-left:300px;>
+
+<img src = https://my-ms.org/images/CerebTransE%20T2%206.14.jpg width=200px height=200px>
+
+<img src = images/fsl_MRI.png width=200px height=200px>
+
+<img src = images/fsl_FMRI_FA.png width=200px height=200px>
+
+
+</div>
+
+
+<div style = padding-left:15px;>
+
+<p> This site will discuss and share different studies dealing with the advances in the fields of Neuropsychiatry, Educational Neuroscience, and NeuroImaging. My research publication and software in relevant fields will also be released in this website. The research I focus on are the application of non-invasive techniques to access the different neurological and neuropsychiatric disorders. Through various research assistant and fellowship positions, I have acquired experience in image and signal processing, as well as, in statistical methods for the analysis of neurological data. </p> 
+
+</div>
+
+<div class=“tab”>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 0px 0px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 10px;
+    border: 1px solid #cccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<div style = padding-left:15px;>
+<p>Click on the buttons for descriptions and current findings in the field menu:</p>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openField(event, 'Neuropsychiatry')">Neuropsychiatry</button>
+  <button class="tablinks" onclick="openField(event, 'Educational Neuroscience')">Educational Neuroscience</button>
+  <button class="tablinks" onclick="openField(event, 'NeuroImaging')">NeuroImaging</button>
+  <button class="tablinks" onclick="openField(event, 'Contact')">Contact</button>
+</div>
+
+<div id="Neuropsychiatry" class="tabcontent">
+  <h3>Neuropsychiatry</h3>
   <p> Neuropsychiatry is a subfield of psychiatry related to mental or emotional disturbances to disordered brain function.</p>
+</div>
+
+<div id="Educational Neuroscience" class="tabcontent">
+  <h3>Educational Neuroscience</h3>
+  <p> Educational Neuroscience is an interdisciplinary field which focuses on merging together findings from various disciplines in cognitive neuroscience, developmental cognitive neuroscience, educational psychology, educational technology, and educational theory to explore the interactions between biological processes and education.</p>
+
+  <p>Interesting collaborative study of detecting which brain region are involved during active learning process of physics in children. Study revealed an increase in BOLD signal activity, after a Modeling Instruction approach of teaching introductory physics, in brain regions as the posterior cingulate cortex and in the frontal poles. These brain regions have been associated to episodic/self-referential thought and learning, respectively: (Click on the image to read the study) </p>
+<a href="https://medicalxpress.com/news/2018-05-brain-students-physics.amp" target="_blank"><img src="https://www.frontiersin.org/files/Articles/325249/fict-05-00010-HTML-r1/image_m/fict-05-00010-g001.jpg" width=300px; height=300px;></a>
+
+</div>
+
+<div id="NeuroImaging" class="tabcontent">
+  <h3>NeuroImaging</h3>
+  <p>NeuroImaging is the use of various techniques and technologies to 
+directly or indirectly image the structure or function of the nervous system. Some common technologies used within this discipline are Magnetic Resonance Imaging (MRI), Functional Magnetic Resonance Imaging (fMRI), Electroencephalogram (EEG), Positron Emission Tomography (PET), among others.</p>
+
+  <p> Although not relevant to the imaging of structure or function of the nervous system, I still find it an interesting innovative way to image the mechanics and movements of the hand bone anatomy with MRI. The new study at NYU examined the promise of their newly design MRI glove prototype. The study author say the promise their MRI glove prototype has at becoming a useful tool for the diagnosis of strain injuries such as carpal tunnel syndrome: <a href="https://nyulangone.org/press-releases/mri-glove-provides-new-look-at-hand-anatomy" target="_blank"> MRI Glove: New Look at Hand Anatomy </a></p>
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Dalton H Bermudez</p>
+  <a href="CV/CV_final.pdf" target="_blank">CV.pdf</a>
+  <p>LinkedIn Website:</p><a href="https://www.linkedin.com/in/dalton-bermudez-0916b5124/">https://www.linkedin.com/in/dalton-bermudez</a>
+  <p>Email: neuropsychneuroimagresearch@gmail.com<p>
+
+</div>
+
+
+<script>
+function openField(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+
+</div>
+
+<div style = padding-left:15px;>
+
+<h3> My Publications: </h3>
+
+<h4> Papers & Reports </h4>
+
+<div>
+
+<p> Bermudez D.“Teaching Strategy for introducing linear algebra 
+at an early stage of education.” <i> LinkedIn. </i> (2018) <a href=“https://www.linkedin.com/pulse/teaching-strategy-introducing-linear-algebra-early-stage-bermudez?articleId=6396398152206811136#comments-6396398152206811136&trk=prof-post”> View Paper</a></p>
+
+<p> Bermudez D., “Implication of Cauchy-Riemann equations in the MRI k-space.” Manuscript in Preparation. </p>
+
+<p> Bermudez D., “Implementation of Machine Learning Algorithm to Uncover Lurking Features
+from Non-simultaneous fMRI/EEG Fused data-sets.” <br> ARPHA Journal. Manuscript # 9128. In
+Review.</p>
+
+<p> Bermudez D., Veeraraghavan H., Young R., “Application of DeBlur GAN towards the removal
+of MRI phase-encoding motion artifact.”<br> Manuscript in Preparation.</p>
+
+<p> Florent T., Bermudez D., Veeraraghavan H., Young R., “Complementary value of radiomics
+features and genetic biomarkers in high grade glioblastoma.”<br> Manuscript in Preparation.</p>
+
+<p>Cabrera Bermudez D., Steyrl D., Müller-Putz G., Pock T. “Implementation of Machine Learning Algorithm to Exploit Information from Multimodal fMRI/EEG Fused Image Data.” <br><i>Marshall Plan Website. </i> (2017) <a href="http://www.marshallplan.at/s/Bermudez-Dalton_760.pdf" target="_blank">View Paper</a> </p>
+
+
+<p> Bermudez D., Maass-Moreno R, Cahid Civelek A., “Effectiveness of CT-based Attenuation
+Correction in SPECT/CT Compared to Chang Attenuation Correction.” <br> Abstract for the
+Society of Nuclear Medicine and Molecular Imaging Annual Meeting, Manuscript in Preparation.</p>
+
+
+
+</div>
+
+<h4> Poster Presentations </h4>
+
+<div>
+<p> Bermudez D., Rubinstein Z., Zhu Z.,Owusu B., Khoo J, Edwards D.,Vazquez M., Bikson M., Garanich J. “3D Brain Mapping of TMS, MRI, and Real Time Muscle Response.” <br><i> CCNY Senior Design</i> (2016) <a href="Conference_Posters/BME Day poster _final(the one sending to Dr. Q).pdf" target="_blank"> View Poster </a></p>
+</div>
+
+<div>
+<p> Bermudez D., Maass-Moreno R., Cahid Civelek A. “Accuracy of CT-based Attenuation Correction in SPECT/CT Gamma camera images.” <br> <i> National Institute of Health (NIH), Natcher Conference Center (Bldg. 45)</i> (2016) <a href="Conference_Posters/poster-DaltonFinal_7_28_2016 .pdf" target="_blank"> View Poster </a></p>
+</div>
+
+<h4> Software Development </h4>
+<div>
+<p> Bermudez D. “Matlab Script: Implementation of Support Vector Machine to Classify impaired from non-impaired paw in Parkinson’s rodent model.” <br> In Progress. </p>
+
+<p> Bermudez D. “Develop open source PYTHON base algorithm to assist in the examination of the coupled effects of the frequency-phase encoding on the MRI space domain.” <br> In Progress.</p>
+
+<p> Bermudez D. “Python Algorithm for Simulation of Phase-encoding motion artifacts.” <i> GitHub</i> (2018) <a href="https://github.com/DBermudez0/Artifact_Simulation/tree/DBermudez0-patch-1"> View Code </a></p>
+
+<p> Bermudez D. “Python Pipeline based algorithm to assist in the analysis and visualization of Motor Evoked Potential (MEP) map distribution acquired from Transcranial Magnetic Stimulation (TMS)”.<i> GitHub</i> (2018) <a href="https://github.com/DBermudez0/MEP-map-with-MRI"> View Code </a></p>
+
+</div>
+</div>
+
+<div style = padding-left:380px;>
+
+<p style=font-size:14px;>
+
+2018 @ The Neuropsychiatric & NeuroImaging Research Blog.</p>
+
+</div>
+
+
+
+</body>
+
+
+</html> related to mental or emotional disturbances to disordered brain function.</p>
 </div>
 
 <div id="Educational Neuroscience" class="tabcontent">
@@ -102,6 +319,13 @@ body {font-family: Arial;}
     
   <p>Interesting collaborative study of detecting which brain region are involved during active learning process of physics in children. Study revealed an increase in BOLD signal activity, after a Modeling Instruction approach of teaching introductory physics, in brain regions as the posterior cingulate cortex and in the frontal poles. These brain regions have been associated to episodic/self-referential thought and learning, respectively: (Click on the image to read the study) </p>
   <a href="https://medicalxpress.com/news/2018-05-brain-students-physics.amp" target="_blank"><img src="https://www.frontiersin.org/files/Articles/325249/fict-05-00010-HTML-r1/image_m/fict-05-00010-g001.jpg" width=300px; height=300px;></a>
+    
+  <p> 2013 research investigation by scientist from carnegie mellon school of computer science revealed higher BOLD signal detection in brain areas involved in the comprehension of programming syntax errors, such as 
+      in those encountered in javascript, were found in the BA6:middle frontal gyrus, BA21:the middle temporal gyrus, BA40:inferior parietal lobule, BA44: region of the inferior frontal gyrus, BA47:region of the painferior frontal gyrus. These
+      regions of the brain fall under the category of the Brodmann area. These brain regions have been previous associated with language processing. Therefore, this paper may provide initial evidence that learning a second language could be benificial at 
+      comprehending and understanding programming languages such as Javascript. One question that can be derived from these study, for further investigation, is if the same brain regions are activated if the short scripts provided in the study involve more numerically 
+      computational related algorithm rather than an algorithm such as the string reverse code, which involves the rearrangement of letters: (Click on the image to read the study) </p>
+  <a href="http://www.cs.cmu.edu/~ckaestne/pdf/icse14_fmri.pdf" target="_black"><img src=images/Siegmund_et_al._ICSE_2015.png width=300px; height=200px;></a>
 </div>
 
 <div id="NeuroImaging" class="tabcontent">
@@ -200,7 +424,7 @@ Society of Nuclear Medicine and Molecular Imaging Annual Meeting, Manuscript in 
 </div>
 </div>
 
-<div style = padding-left:180px;>
+<div style = padding-left:100px;>
 
 <p style=font-size:14px;>
 
